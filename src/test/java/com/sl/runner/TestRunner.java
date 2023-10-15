@@ -13,9 +13,9 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:target/HTMLReports"},
 		dryRun = false,
 		tags = {"@smoke"}
-		
-		
 		)
+
+
 public class TestRunner {
 
 }

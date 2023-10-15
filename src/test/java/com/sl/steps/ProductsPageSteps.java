@@ -31,5 +31,13 @@ public class ProductsPageSteps extends TestBase{
 		Assert.assertTrue(flag);
 	}
 	
+	@Then("^user should see total (\\d+) items on Product page$")
+	public void user_should_see_total_items_on_Product_page(int expTotalItems) {
+		int actualTotalItems = prouctsPage.getTotalItems();
+		Assert.assertEquals(expTotalItems, actualTotalItems);
+		
+		
+	}
+	
 	
 }
